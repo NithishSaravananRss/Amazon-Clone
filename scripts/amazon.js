@@ -65,18 +65,13 @@ document.querySelectorAll('.js-add-to-cart')
         //dataset used to get the data attribute used in the button
           const productId = button.dataset.productId;
 
-
-
           let matchingItem ;
-
 
           cart.forEach((item) => {
             if(productId === item.productId){
                 matchingItem = item ;
             }
           });
-
-
 
           if(matchingItem)
           {
@@ -90,10 +85,13 @@ document.querySelectorAll('.js-add-to-cart')
             });
           }
 
+          let cartQuantity = 0;
 
+          cart.forEach((item) => {
+            cartQuantity += item.quantity;
+          });
 
-          
-          console.log(cart);
+          document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
           
       });
 });
