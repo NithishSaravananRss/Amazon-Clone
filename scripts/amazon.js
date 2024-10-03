@@ -46,7 +46,9 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">
+          <button class="add-to-cart-button button-primary js-add-to-cart" 
+          //below is called data attribute it is HTML attribute, use  allow us to attach any information to an element
+          data-product-id="${product.id}">
             Add to Cart
           </button>
     </div>
@@ -54,6 +56,44 @@ products.forEach((product) => {
   
 });
 
-console.log(productsHTML);
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart')
+    .forEach((button) => {
+      button.addEventListener('click', () => {
+        //dataset used to get the data attribute used in the button
+          const productId = button.dataset.productId;
+
+
+
+          let matchingItem ;
+
+
+          cart.forEach((item) => {
+            if(productId === item.productId){
+                matchingItem = item ;
+            }
+          });
+
+
+
+          if(matchingItem)
+          {
+            matchingItem.quantity += 1;
+          }
+          else
+          {
+            cart.push({
+              productId: productId,
+              quantity: 1
+            });
+          }
+
+
+
+          
+          console.log(cart);
+          
+      });
+});
