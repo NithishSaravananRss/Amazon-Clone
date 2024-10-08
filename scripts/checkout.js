@@ -109,7 +109,7 @@ function deliveryOptionsHTML(matchingProduct, cartItem){
 
      html += 
       `
-      <div class="delivery-option">
+          <div class="delivery-option">
             <input type="radio"
             ${isChecked ? 'checked' : ''}
               class="delivery-option-input"
