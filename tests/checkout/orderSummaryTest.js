@@ -1,6 +1,6 @@
 import {renderOrderSummary} from '../../scripts/checkout/orderSummary.js';
 import {loadFromStorage, cart} from '../../data/cart.js';
-import { loadProductsFetch } from '../../data/products.js';// if we want to use callback method we can import loadProducts function which is commented
+import { loadProducts, loadProductsFetch } from '../../data/products.js';
 
 describe('test suite: renderOrderSummary', () => {
   const productId1 = 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6';
