@@ -26,7 +26,7 @@ The project replicates some basic functionalities of the Amazon e-commerce platf
 ## 🚀 How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/amazon-clone.git
+   git clone https://github.com/NithishSaravananRss/amazon-clone.git
 2.Open the project folder in your IDE (e.g., VS Code).
 
 3. Open index.html.
