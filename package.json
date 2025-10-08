@@ -1,0 +1,23 @@
+{
+  "name": "amazon-clone",
+  "version": "1.0.0",
+  "description": "A simple Amazon Clone built using HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NithishSaravananRss/Amazon-Clone.git"
+  },
+  "keywords": [
+    "amazon",
+    "clone",
+    "ecommerce",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "NithishSaravananRss",
+  "license": "MIT"
+}
